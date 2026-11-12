@@ -520,10 +520,15 @@ npm start
 
 Tests use the Node.js test runner (`node --test`).
 
+The loader, renderer, browser player and export live in [`@flipbook-md/core`](https://github.com/uminocelo/flipbook-md-core). This repository holds the `flipbook` command and its tests. To work on both at once, clone `flipbook-md-core` next to this repository and link it:
+
+```sh
+npm link ../flipbook-md-core
+```
+
 ```text
 bin/        CLI entry point
-src/        discovery, Markdown rendering, HTTP server, image and video export
-public/     browser player
+src/        the CLI commands (show, check, template add, export)
 examples/   sample presentations
 docs/       README screenshots
 test/       automated tests
