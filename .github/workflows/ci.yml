@@ -36,3 +36,27 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+  core-next:
+    name: Test against core main (early warning)
+    runs-on: ubuntu-latest
+    # Warn-only: a failure means the next core release would break the CLI.
+    continue-on-error: true
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install core from its main branch
+        run: npm install --no-save "github:uminocelo/flipbook-md-core#main"
+
+      - name: Run tests
+        run: npm test
