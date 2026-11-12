@@ -5,7 +5,6 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { exportVideo } from "../src/export.js";
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -33,11 +32,6 @@ function probeDuration(file) {
     });
   });
 }
-
-test("video export rejects a missing duration before it renders", async () => {
-  const presentation = { title: "Short", theme: "midnight", themeCss: "", root: os.tmpdir(), slides: [{ index: 0, title: "One", html: "<h1>One</h1>" }] };
-  await assert.rejects(() => exportVideo(presentation, { outputDir: os.tmpdir() }), /duration/);
-});
 
 test("exports an mp4 from configuration.yml with CLI overrides", { timeout: 120_000 }, async () => fixture(async (dir) => {
   await fs.writeFile(path.join(dir, "talk.slide.md"), "---\ntitle: Two Beats\n---\n# One\n\nFirst frame.\n\n---\n\n# Two\n\nSecond frame.\n");

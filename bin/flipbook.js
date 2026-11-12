@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { show, exportSlides, check, templateAdd } from "../src/cli.js";
-import { PRESETS } from "../src/export.js";
+import { PRESETS } from "@flipbook-md/core";
 
 const [command, ...rest] = process.argv.slice(2);
 // The path is optional. A first argument that is a flag means the current directory.

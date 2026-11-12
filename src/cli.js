@@ -1,9 +1,13 @@
 import { spawn } from "node:child_process";
-import { discoverPresentation } from "./presentation.js";
-import { addSavedTemplate } from "./templates.js";
-import { startServer } from "./server.js";
-import { exportCarousel, exportVideo } from "./export.js";
-import { loadConfiguration, resolveExportOptions } from "./configuration.js";
+import {
+  addSavedTemplate,
+  discoverPresentation,
+  exportCarousel,
+  exportVideo,
+  loadConfiguration,
+  resolveExportOptions,
+  startServer
+} from "@flipbook-md/core";
 
 function openBrowser(url) {
   const platform = process.platform;
