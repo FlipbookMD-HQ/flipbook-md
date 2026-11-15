@@ -34,6 +34,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Chromium and ffmpeg for export tests
+        run: |
+          npx playwright install --with-deps chromium
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+
       - name: Run tests
         run: npm test
 
@@ -54,6 +59,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Install Chromium and ffmpeg for export tests
+        run: |
+          npx playwright install --with-deps chromium
+          sudo apt-get update && sudo apt-get install -y ffmpeg
 
       - name: Install core from its main branch
         run: npm install --no-save "github:uminocelo/flipbook-md-core#main"
