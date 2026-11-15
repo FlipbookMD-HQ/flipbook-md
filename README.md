@@ -12,6 +12,14 @@ The shot above is `examples/database-indexes-project` in the browser player.
 
 Requires [Node.js](https://nodejs.org/) 20 or newer.
 
+### The Flipbook MD projects
+
+| Project | What it is |
+| --- | --- |
+| `flipbook-md` (this repository) | The `flipbook` command: present, check and export decks. |
+| [`@flipbook-md/core`](https://github.com/uminocelo/flipbook-md-core) | The library behind it: loading, rendering, blueprints, export and document import. |
+| Flipbook Studio | A self-hosted editor for the same deck files, with optional AI from a model running on your machine. **Coming soon.** |
+
 ## Install
 
 ```sh
@@ -542,9 +550,9 @@ Flipbook is for local authoring. The server listens on loopback only. Rendered M
 
 ## Status
 
-Version 0.1.0 includes presentation discovery, Markdown slides, a browser player with autoplay, an announcer view for speaker notes, optional `presentation.css` themes, slide templates, optional `blueprint.yml` checks, carousel PNG export, MP4 export, and tests.
+Version 0.4.0 runs on `@flipbook-md/core` 0.13. It includes presentation discovery, Markdown slides, a browser player with autoplay and transitions, an announcer view for speaker notes, four built-in themes plus `presentation.css` and library themes, slide templates, template groups (media kits) with page chrome, optional `blueprint.yml` checks, PNG carousel export with seven presets, and MP4 export.
 
-This version does not include live reload, a visual editor, PowerPoint export, collaboration, or support for every Markdown extension.
+This version does not include live reload, PowerPoint export, collaboration, or support for every Markdown extension. A visual editor, Flipbook Studio, is coming soon as a separate app.
 
 ## License
 
