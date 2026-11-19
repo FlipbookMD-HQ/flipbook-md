@@ -46,7 +46,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@flipbook-md/core": "~0.13.0"
+    "@flipbook-md/core": "~0.14.0"
   },
   "devDependencies": {
     "yaml": "^2.7.0"
