@@ -1,6 +1,6 @@
 # Flipbook MD
 
-[![CI](https://github.com/uminocelo/flipbook-md/actions/workflows/ci.yml/badge.svg)](https://github.com/uminocelo/flipbook-md/actions/workflows/ci.yml)
+[![CI](https://github.com/FlipbookMD-HQ/flipbook-md/actions/workflows/ci.yml/badge.svg)](https://github.com/FlipbookMD-HQ/flipbook-md/actions/workflows/ci.yml)
 
 **Markdown in. Slides out.**
 
@@ -17,7 +17,7 @@ Requires [Node.js](https://nodejs.org/) 20 or newer.
 | Project | What it is |
 | --- | --- |
 | `flipbook-md` (this repository) | The `flipbook` command: present, check and export decks. |
-| [`@flipbook-md/core`](https://github.com/uminocelo/flipbook-md-core) | The library behind it: loading, rendering, blueprints, export and document import. |
+| [`@flipbook-md/core`](https://github.com/FlipbookMD-HQ/flipbook-md-core) | The library behind it: loading, rendering, blueprints, export and document import. |
 | Flipbook Studio | A self-hosted editor for the same deck files, with optional AI from a model running on your machine. **Coming soon.** |
 
 ## Install
@@ -528,7 +528,7 @@ npm start
 
 Tests use the Node.js test runner (`node --test`).
 
-The loader, renderer, browser player and export live in [`@flipbook-md/core`](https://github.com/uminocelo/flipbook-md-core). This repository holds the `flipbook` command and its tests. To work on both at once, clone `flipbook-md-core` next to this repository and link it:
+The loader, renderer, browser player and export live in [`@flipbook-md/core`](https://github.com/FlipbookMD-HQ/flipbook-md-core). This repository holds the `flipbook` command and its tests. To work on both at once, clone `flipbook-md-core` next to this repository and link it:
 
 ```sh
 npm link ../flipbook-md-core
