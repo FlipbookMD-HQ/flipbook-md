@@ -17,15 +17,15 @@
     "png-export",
     "developer-tools"
   ],
-  "homepage": "https://github.com/uminocelo/flipbook-md",
+  "homepage": "https://github.com/FlipbookMD-HQ/flipbook-md",
   "bugs": {
-    "url": "https://github.com/uminocelo/flipbook-md/issues"
+    "url": "https://github.com/FlipbookMD-HQ/flipbook-md/issues"
   },
   "license": "MIT",
   "author": "Celo (https://github.com/uminocelo)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uminocelo/flipbook-md.git"
+    "url": "git+https://github.com/FlipbookMD-HQ/flipbook-md.git"
   },
   "type": "module",
   "bin": {
