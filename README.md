@@ -1,5 +1,7 @@
 # Flipbook MD
 
+![Flipbook MD](docs/logo.svg)
+
 [![CI](https://github.com/FlipbookMD-HQ/flipbook-md/actions/workflows/ci.yml/badge.svg)](https://github.com/FlipbookMD-HQ/flipbook-md/actions/workflows/ci.yml)
 
 **Markdown in. Slides out.**
