@@ -20,7 +20,7 @@ Requires [Node.js](https://nodejs.org/) 20 or newer.
 | --- | --- |
 | `flipbook-md` (this repository) | The `flipbook` command: present, check and export decks. |
 | [`@flipbook-md/core`](https://github.com/FlipbookMD-HQ/flipbook-md-core) | The library behind it: loading, rendering, blueprints, export and document import. |
-| Flipbook Studio | A self-hosted editor for the same deck files, with optional AI from a model running on your machine. **Coming soon.** |
+| [Flipbook Studio](https://github.com/FlipbookMD-HQ/flipbook-studio) | A self-hosted editor for the same deck files, with optional AI from a model running on your machine. [v0.3.2](https://github.com/FlipbookMD-HQ/flipbook-studio/releases/tag/v0.3.2). |
 
 ## Install
 
@@ -552,9 +552,13 @@ Flipbook is for local authoring. The server listens on loopback only. Rendered M
 
 ## Status
 
-Version 0.4.0 runs on `@flipbook-md/core` 0.13. It includes presentation discovery, Markdown slides, a browser player with autoplay and transitions, an announcer view for speaker notes, four built-in themes plus `presentation.css` and library themes, slide templates, template groups (media kits) with page chrome, optional `blueprint.yml` checks, PNG carousel export with seven presets, and MP4 export.
+Version 0.4.1 runs on `@flipbook-md/core` 0.14. It includes presentation discovery, Markdown slides, a browser player with autoplay and transitions, an announcer view for speaker notes, four built-in themes plus `presentation.css` and library themes, slide templates, template groups (media kits) with page chrome, optional `blueprint.yml` checks, PNG carousel export with seven presets, and MP4 export.
 
-This version does not include live reload, PowerPoint export, collaboration, or support for every Markdown extension. A visual editor, Flipbook Studio, is coming soon as a separate app.
+This version does not include live reload, PowerPoint export, collaboration, or support for every Markdown extension. A visual editor, [Flipbook Studio](https://github.com/FlipbookMD-HQ/flipbook-studio), is available as a separate app. Version 0.3.2 can be installed with:
+
+```sh
+npm install -g https://github.com/FlipbookMD-HQ/flipbook-studio/releases/download/v0.3.2/flipbook-studio.tgz
+```
 
 ## License
 

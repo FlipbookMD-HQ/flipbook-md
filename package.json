@@ -1,6 +1,6 @@
 {
   "name": "flipbook-md",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Turn Markdown files into browser-based slide presentations and social carousel images. The flipbook CLI, built on @flipbook-md/core.",
   "keywords": [
     "cli",
